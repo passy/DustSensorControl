@@ -8,39 +8,39 @@ import java.util.Date;
 
 public class SensorData {
 
-    private float PM2;
-    private float PM10;
+    private float pm25;
+    private float pm10;
     private Date date;
 
-    public SensorData(float PM2, float PM10, Date date) {
-        this.PM2 = PM2;
-        this.PM10 = PM10;
+    public SensorData(float pm25, float pm10, Date date) {
+        this.pm25 = pm25;
+        this.pm10 = pm10;
         this.date = date;
     }
 
     public SensorData() {
-        PM10 = 0;
-        PM2 = 0;
+        pm10 = 0;
+        pm25 = 0;
     }
 
-    public float getPM2() {
-        return PM2;
+    public float getPm25() {
+        return pm25;
     }
 
-    public float getPM10() {
-        return PM10;
+    public float getPm10() {
+        return pm10;
     }
 
     public Date getDate() {
         return date;
     }
 
-    public void setPM2(float PM2) {
-        this.PM2 = PM2;
+    public void setPm25(float pm25) {
+        this.pm25 = pm25;
     }
 
-    public void setPM10(float PM10) {
-        this.PM10 = PM10;
+    public void setPm10(float pm10) {
+        this.pm10 = pm10;
     }
 
     public void setDate(Date date) {

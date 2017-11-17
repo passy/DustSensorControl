@@ -39,8 +39,8 @@ public class SensorSDS011 {
         String s = "";
         float i = ((data[3] << 8) + data[2]);
         float o = i / 10;
-        sensorData.setPM2(o);
-        return sensorData.getPM2();
+        sensorData.setPm25(o);
+        return sensorData.getPm25();
     }
 
     float readPM10(byte[] bytes) {
@@ -48,8 +48,8 @@ public class SensorSDS011 {
         String s = "";
         float i = ((data[5] << 8) + data[4]);
         float o = i / 10;
-        sensorData.setPM10(o);
-        return sensorData.getPM10();
+        sensorData.setPm10(o);
+        return sensorData.getPm10();
     }
 
     private int[] toUnsigned(byte[] bytes) {

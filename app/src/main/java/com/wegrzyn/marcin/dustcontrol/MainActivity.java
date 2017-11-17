@@ -9,8 +9,6 @@ import android.view.KeyEvent;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.Date;
-
 public class MainActivity extends Activity {
 
     public static final String SENSOR_DATA = "SensorData";
@@ -136,11 +134,11 @@ public class MainActivity extends Activity {
 
     private void displayPM() {
         if (whatDsp) {
-            displHt16k33.display(String.valueOf(sds011.getSensorData().getPM10()));
+            displHt16k33.display(String.valueOf(sds011.getSensorData().getPm10()));
             ledA.setLed(false);
             ledB.setLed(true);
         } else {
-            displHt16k33.display(String.valueOf(sds011.getSensorData().getPM2()));
+            displHt16k33.display(String.valueOf(sds011.getSensorData().getPm25()));
             ledA.setLed(true);
             ledB.setLed(false);
         }
